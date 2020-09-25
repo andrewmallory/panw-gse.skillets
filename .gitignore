@@ -1,3 +1,5 @@
 local_tests
 venv
 .idea
+.vscode
+__pycache__/
