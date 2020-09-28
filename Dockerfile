@@ -8,7 +8,7 @@ RUN mkdir /code \
     && mkdir /opt/venv \
     && python -m venv /opt/venv \
     && apk add --update --virtual .build_deps g++ gcc python3-dev openssl openssl-dev \
-    && apk add git libxml2 libxml2-dev libxslt libxslt-dev ansible libffi libffi-dev \
+    && apk add libxml2 libxml2-dev libxslt libxslt-dev ansible libffi libffi-dev \
     && pip install -r requirements.txt \
     && apk del .build_deps \
     && rm -rf /opt/venv/lib/python3.8/site-packages/ansible_collections
